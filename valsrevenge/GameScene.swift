@@ -14,13 +14,26 @@ class GameScene: SKScene {
     var graphs = [String : GKGraph]()
     
     private var lastUpdateTime : TimeInterval = 0
-    
+    private var player: Player?
+
+    override func didMove(to view: SKView) {
+        player = childNode(withName: "player") as? Player
+        player?.move(.stop)
+    }
+
     override func sceneDidLoad() {
 
     }
     
     
     func touchDown(atPoint pos : CGPoint) {
+        let nodeAtPoint = atPoint(pos)
+        if let touchedNode = nodeAtPoint as? SKSpriteNode {
+            if touchedNode.name?.starts(with: "controller_") == true {
+                let direction = touchedNode.name?.replacingOccurrences(of: "controller_", with: "")
+                player?.move(Direction(rawValue: direction ?? Direction.stop.rawValue)!)
+            }
+        }
     }
     
     func touchMoved(toPoint pos : CGPoint) {
