@@ -37,9 +37,22 @@ class GameScene: SKScene {
     }
     
     func touchMoved(toPoint pos : CGPoint) {
+        let nodeAtPoint = atPoint(pos)
+        if let touchedNode = nodeAtPoint as? SKSpriteNode {
+            if touchedNode.name?.starts(with: "controller_") == true {
+                let direction = touchedNode.name?.replacingOccurrences(of: "controller_", with: "")
+                player?.move(Direction(rawValue: direction ?? Direction.stop.rawValue)!)
+            }
+        }
     }
     
     func touchUp(atPoint pos : CGPoint) {
+        let nodeAtPoint = atPoint(pos)
+        if let touchedNode = nodeAtPoint as? SKSpriteNode {
+            if touchedNode.name?.starts(with: "controller_") == true {
+                player?.stop()
+            }
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
