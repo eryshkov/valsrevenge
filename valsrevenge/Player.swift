@@ -13,6 +13,10 @@ enum Direction: String {
     case right
     case up
     case down
+    case topLeft
+    case topRight
+    case bottomLeft
+    case bottomRight
 }
 
 class Player: SKSpriteNode {
@@ -31,6 +35,14 @@ class Player: SKSpriteNode {
             self.physicsBody?.velocity = CGVector(dx: 100, dy: 0)
         case .stop:
             stop()
+        case .topLeft:
+            self.physicsBody?.velocity = CGVector(dx: -100, dy: 100)
+        case .topRight:
+            self.physicsBody?.velocity = CGVector(dx: 100, dy: 100)
+        case .bottomLeft:
+            self.physicsBody?.velocity = CGVector(dx: -100, dy: -100)
+        case .bottomRight:
+            self.physicsBody?.velocity = CGVector(dx: 100, dy: -100)
         }
     }
     
