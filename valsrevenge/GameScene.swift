@@ -28,11 +28,19 @@ class GameScene: SKScene {
     
     func touchDown(atPoint pos : CGPoint) {
         let nodeAtPoint = atPoint(pos)
-        if let touchedNode = nodeAtPoint as? SKSpriteNode {
-            if touchedNode.name?.starts(with: "controller_") == true {
-                let direction = touchedNode.name?.replacingOccurrences(of: "controller_", with: "")
-                player?.move(Direction(rawValue: direction ?? Direction.stop.rawValue)!)
-            }
+        guard let touchedNode = nodeAtPoint as? SKSpriteNode else {
+            return
+        }
+
+        if touchedNode.name?.starts(with: "controller_") == true {
+            let direction = touchedNode.name?.replacingOccurrences(of: "controller_", with: "")
+            player?.move(Direction(rawValue: direction ?? Direction.stop.rawValue)!)
+            return
+        }
+
+        if touchedNode.name == "button_attack" {
+            player?.attack()
+            return
         }
     }
     
