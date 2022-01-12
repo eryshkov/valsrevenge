@@ -19,6 +19,14 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         player = childNode(withName: "player") as? Player
         player?.move(.stop)
+        setupCamera()
+    }
+
+    func setupCamera() {
+        guard let player = player else { return }
+        let distance = SKRange(constantValue: 0)
+        let playerConstraint = SKConstraint.distance(distance, to: player)
+        camera?.constraints = [playerConstraint]
     }
 
     override func sceneDidLoad() {
