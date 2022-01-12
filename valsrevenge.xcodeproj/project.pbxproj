@@ -15,6 +15,8 @@
 		5C75B94A27858D2B00507865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C75B94927858D2B00507865 /* Assets.xcassets */; };
 		5C75B94D27858D2B00507865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C75B94B27858D2B00507865 /* LaunchScreen.storyboard */; };
 		5CFDB557278B6023009F8332 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDB556278B6023009F8332 /* Player.swift */; };
+		5CFDB559278F7106009F8332 /* Controller.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5CFDB558278F7106009F8332 /* Controller.sks */; };
+		5CFDB55B278F7617009F8332 /* AttackButton.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5CFDB55A278F7617009F8332 /* AttackButton.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		5C75B94927858D2B00507865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C75B94C27858D2B00507865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CFDB556278B6023009F8332 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		5CFDB558278F7106009F8332 /* Controller.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Controller.sks; sourceTree = "<group>"; };
+		5CFDB55A278F7617009F8332 /* AttackButton.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AttackButton.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			children = (
 				5C75B93C27858D2800507865 /* AppDelegate.swift */,
 				5C75B93E27858D2800507865 /* GameScene.sks */,
+				5CFDB55A278F7617009F8332 /* AttackButton.sks */,
+				5CFDB558278F7106009F8332 /* Controller.sks */,
 				5C75B94227858D2800507865 /* GameScene.swift */,
 				5C75B94427858D2800507865 /* GameViewController.swift */,
 				5C75B94627858D2800507865 /* Main.storyboard */,
@@ -132,6 +138,8 @@
 			files = (
 				5C75B94827858D2800507865 /* Main.storyboard in Resources */,
 				5C75B93F27858D2800507865 /* GameScene.sks in Resources */,
+				5CFDB559278F7106009F8332 /* Controller.sks in Resources */,
+				5CFDB55B278F7617009F8332 /* AttackButton.sks in Resources */,
 				5C75B94A27858D2B00507865 /* Assets.xcassets in Resources */,
 				5C75B94D27858D2B00507865 /* LaunchScreen.storyboard in Resources */,
 			);
