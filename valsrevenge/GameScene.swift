@@ -117,4 +117,16 @@ class GameScene: SKScene, GameViewControllerDelegate {
         
         self.lastUpdateTime = currentTime
     }
+
+    func updateControllerLocation() {
+        let controller = childNode(withName: "//controller")
+        controller?.position = CGPoint(x: viewLeft, y: viewBottom)
+
+        let attackButton = childNode(withName: "//attackButton")
+        attackButton?.position = CGPoint(x: viewRight, y: viewBottom)
+    }
+
+    override func didFinishUpdate() {
+        updateControllerLocation()
+    }
 }
