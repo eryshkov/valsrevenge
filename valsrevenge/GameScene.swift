@@ -8,7 +8,7 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, GameViewControllerDelegate {
     
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
@@ -20,6 +20,17 @@ class GameScene: SKScene {
         player = childNode(withName: "player") as? Player
         player?.move(.stop)
         setupCamera()
+    }
+
+    func didChangeLayout() {
+        let w = view?.bounds.size.width ?? 1024
+        let h = view?.bounds.size.height ?? 1336
+
+        if h >= w {//portrait
+            camera?.setScale(1)
+        } else {
+            camera?.setScale(1.25)
+        }
     }
 
     func setupCamera() {
