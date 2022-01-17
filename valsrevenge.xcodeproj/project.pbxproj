@@ -18,6 +18,7 @@
 		5CFDB559278F7106009F8332 /* Controller.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5CFDB558278F7106009F8332 /* Controller.sks */; };
 		5CFDB55B278F7617009F8332 /* AttackButton.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5CFDB55A278F7617009F8332 /* AttackButton.sks */; };
 		5CFDB55D27921C3C009F8332 /* SKScene+ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDB55C27921C3C009F8332 /* SKScene+ViewProperties.swift */; };
+		5CFDB55F2795FA86009F8332 /* GameScene+ViewUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDB55E2795FA86009F8332 /* GameScene+ViewUpdates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		5CFDB558278F7106009F8332 /* Controller.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Controller.sks; sourceTree = "<group>"; };
 		5CFDB55A278F7617009F8332 /* AttackButton.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AttackButton.sks; sourceTree = "<group>"; };
 		5CFDB55C27921C3C009F8332 /* SKScene+ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKScene+ViewProperties.swift"; sourceTree = "<group>"; };
+		5CFDB55E2795FA86009F8332 /* GameScene+ViewUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+ViewUpdates.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		5C75B93B27858D2800507865 /* valsrevenge */ = {
 			isa = PBXGroup;
 			children = (
+				5CFDB55E2795FA86009F8332 /* GameScene+ViewUpdates.swift */,
 				5C75B93C27858D2800507865 /* AppDelegate.swift */,
 				5C75B93E27858D2800507865 /* GameScene.sks */,
 				5CFDB55C27921C3C009F8332 /* SKScene+ViewProperties.swift */,
@@ -159,6 +162,7 @@
 				5CFDB55D27921C3C009F8332 /* SKScene+ViewProperties.swift in Sources */,
 				5C75B94327858D2800507865 /* GameScene.swift in Sources */,
 				5C75B94527858D2800507865 /* GameViewController.swift in Sources */,
+				5CFDB55F2795FA86009F8332 /* GameScene+ViewUpdates.swift in Sources */,
 				5C75B93D27858D2800507865 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
