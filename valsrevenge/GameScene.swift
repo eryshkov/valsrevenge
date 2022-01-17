@@ -12,6 +12,8 @@ class GameScene: SKScene, GameViewControllerDelegate {
     
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
+
+    let margin: CGFloat = 20
     
     private var lastUpdateTime : TimeInterval = 0
     private var player: Player?
@@ -120,10 +122,10 @@ class GameScene: SKScene, GameViewControllerDelegate {
 
     func updateControllerLocation() {
         let controller = childNode(withName: "//controller")
-        controller?.position = CGPoint(x: viewLeft, y: viewBottom)
+        controller?.position = CGPoint(x: viewLeft + margin + insets.left, y: viewBottom + margin + insets.bottom)
 
         let attackButton = childNode(withName: "//attackButton")
-        attackButton?.position = CGPoint(x: viewRight, y: viewBottom)
+        attackButton?.position = CGPoint(x: viewRight - margin - insets.right, y: viewBottom + margin + insets.bottom)
     }
 
     override func didFinishUpdate() {
