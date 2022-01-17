@@ -19,6 +19,7 @@
 		5CFDB55B278F7617009F8332 /* AttackButton.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5CFDB55A278F7617009F8332 /* AttackButton.sks */; };
 		5CFDB55D27921C3C009F8332 /* SKScene+ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDB55C27921C3C009F8332 /* SKScene+ViewProperties.swift */; };
 		5CFDB55F2795FA86009F8332 /* GameScene+ViewUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFDB55E2795FA86009F8332 /* GameScene+ViewUpdates.swift */; };
+		5CFDB5612796017A009F8332 /* MainTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5CFDB5602796017A009F8332 /* MainTileSet.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		5CFDB55A278F7617009F8332 /* AttackButton.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AttackButton.sks; sourceTree = "<group>"; };
 		5CFDB55C27921C3C009F8332 /* SKScene+ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKScene+ViewProperties.swift"; sourceTree = "<group>"; };
 		5CFDB55E2795FA86009F8332 /* GameScene+ViewUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+ViewUpdates.swift"; sourceTree = "<group>"; };
+		5CFDB5602796017A009F8332 /* MainTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainTileSet.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				5C75B94427858D2800507865 /* GameViewController.swift */,
 				5C75B94627858D2800507865 /* Main.storyboard */,
 				5C75B94927858D2B00507865 /* Assets.xcassets */,
+				5CFDB5602796017A009F8332 /* MainTileSet.sks */,
 				5C75B94B27858D2B00507865 /* LaunchScreen.storyboard */,
 				5CFDB556278B6023009F8332 /* Player.swift */,
 			);
@@ -144,6 +147,7 @@
 			files = (
 				5C75B94827858D2800507865 /* Main.storyboard in Resources */,
 				5C75B93F27858D2800507865 /* GameScene.sks in Resources */,
+				5CFDB5612796017A009F8332 /* MainTileSet.sks in Resources */,
 				5CFDB559278F7106009F8332 /* Controller.sks in Resources */,
 				5CFDB55B278F7617009F8332 /* AttackButton.sks in Resources */,
 				5C75B94A27858D2B00507865 /* Assets.xcassets in Resources */,
