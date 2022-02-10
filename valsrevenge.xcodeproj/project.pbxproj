@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0E924527B5AF7800F176F3 /* SKTileMapNode+Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E924427B5AF7800F176F3 /* SKTileMapNode+Physics.swift */; };
 		5C75B93D27858D2800507865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75B93C27858D2800507865 /* AppDelegate.swift */; };
 		5C75B93F27858D2800507865 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5C75B93E27858D2800507865 /* GameScene.sks */; };
 		5C75B94327858D2800507865 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75B94227858D2800507865 /* GameScene.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C0E924427B5AF7800F176F3 /* SKTileMapNode+Physics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTileMapNode+Physics.swift"; sourceTree = "<group>"; };
 		5C75B93927858D2800507865 /* valsrevenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = valsrevenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C75B93C27858D2800507865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C75B93E27858D2800507865 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				5CFDB55E2795FA86009F8332 /* GameScene+ViewUpdates.swift */,
 				5C75B93C27858D2800507865 /* AppDelegate.swift */,
 				5C75B93E27858D2800507865 /* GameScene.sks */,
+				5C0E924427B5AF7800F176F3 /* SKTileMapNode+Physics.swift */,
 				5CFDB55C27921C3C009F8332 /* SKScene+ViewProperties.swift */,
 				5CFDB55A278F7617009F8332 /* AttackButton.sks */,
 				5CFDB558278F7106009F8332 /* Controller.sks */,
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0E924527B5AF7800F176F3 /* SKTileMapNode+Physics.swift in Sources */,
 				5CFDB557278B6023009F8332 /* Player.swift in Sources */,
 				5CFDB55D27921C3C009F8332 /* SKScene+ViewProperties.swift in Sources */,
 				5C75B94327858D2800507865 /* GameScene.swift in Sources */,
